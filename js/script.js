@@ -33,4 +33,9 @@ function getRandomNumber(min, max) {
     { nome: 'Inter', puntiFatti: 0, falliSubiti: 0 },
   ];
   
+  // Generare numeri casuali per punti fatti e falli subiti
+for (const team of teams) {
+    team.puntiFatti = getRandomNumber(1, 50);
+    team.falliSubiti = getRandomNumber(1, 50);
+  }
   
