@@ -39,3 +39,13 @@ for (const team of teams) {
     team.falliSubiti = getRandomNumber(1, 50);
   }
   
+
+  // creare un nuovo array con nomi e falli subiti
+const penaltyTeams = teams.map(({ nome, falliSubiti }) => ({ nome, falliSubiti }));
+
+// Stampare tutto in console
+console.log('Squadre di calcio con punti fatti e falli subiti:');
+console.log(teams);
+
+console.log('Nuovo array con nomi e falli subiti:');
+console.log(penaltyTeams);
