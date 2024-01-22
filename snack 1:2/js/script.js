@@ -36,4 +36,23 @@ const students = [
     { id: 102, name: 'Piero della Francesca', grades: 50 },
     { id: 120, name: 'Francesca da Polenta', grades: 84 }
 ];
+
+
+// 1. Studenti con voti superiore a 70
+const studentsAbove70 = students.filter(student => student.grades > 70);
+
+// 2. Studenti con voti superiore a 70 e id superiore a 120
+const studentsAbove70AndIdAbove120 = students.filter(student => student.grades > 70 && student.id > 120);
+
+// 3. Trasformo i nomi degli studenti in maiuscolo
+const uppercaseNames = students.map(student => ({
+  id: student.id,
+  name: student.name.toUpperCase(),
+  grades: student.grades
+}));
+
+// Stampo i risultati in console
+console.log('Studenti con voti superiori a 70:', studentsAbove70);
+console.log('Studenti con voti superiori a 70 e id > 120:', studentsAbove70AndIdAbove120);
+console.log('Targhe con nomi in maiuscolo:', uppercaseNames);
   
