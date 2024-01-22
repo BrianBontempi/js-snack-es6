@@ -23,3 +23,6 @@ const guestsList = guests.map((guest, index) => ({
   
   // Stampo l'array in console
   console.log(guestsList);
+
+
+// ! snack 2
