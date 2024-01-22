@@ -1,4 +1,4 @@
-// ! Primo snack
+// ! snack 3
 
 // Creare un array di oggetti che descrivono biciclette da corsa
 const bicycles = [
@@ -19,7 +19,7 @@ const bicycles = [
   console.log(`La bici con il peso minore è ${lighterBike.name} con un peso di ${lighterBike.peso} kg.`);
 
 
-// ! Secondo snack
+// ! snack 4
 
 // Funzione per generare un numero casuale compreso tra min e max
 function getRandomNumber(min, max) {
