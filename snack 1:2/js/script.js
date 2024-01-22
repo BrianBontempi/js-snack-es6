@@ -1,3 +1,4 @@
+// ! snack 1
 const tableName = 'Tavolo Vip';
 
 const guests = [
@@ -12,3 +13,13 @@ const guests = [
   'Amal Clooney',
   'Maneskin'
 ];
+
+// Creo l'array di oggetti guestsList
+const guestsList = guests.map((guest, index) => ({
+    tableName,
+    guestName: guest,
+    seatNumber: index + 1
+  }));
+  
+  // Stampo l'array in console
+  console.log(guestsList);
